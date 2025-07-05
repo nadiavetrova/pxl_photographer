@@ -78,14 +78,45 @@ button {
 .caveat {
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: bold;
   font-style: normal;
 }
 
-/* _____________________________________ */
+.openSans {
+  font-family: 'OpenSans-SemiBold', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* _______________header______________________ */
 
 
+.col-5,
+.col-7 {
+  border: 2px solid #000;
+}
 
+.headerMenu_box {
+  margin-top: 35px;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.headerMenuList {
+  margin-top: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.headerBtn_box {
+  border: 3px solid #FFA216;
+  padding: 12px 35px;
+  transition: background 0.5s ease;
+}
 
 
 
