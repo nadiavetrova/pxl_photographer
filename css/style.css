@@ -1,0 +1,115 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++ */
+
+.accent {
+  color: #3C5A4B;
+}
+
+.accentBg {
+  background: linear-gradient(to right, #3C5A4B, #5E8D76, #3C5A4B);
+}
+
+.beige {
+  color: #F7F5E4;
+}
+
+.beigeBg {
+  background-color: #F7F5E4;
+}
+
+.greenBg {
+  background-color: #3C5A4B;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* +++++++++++++++fonts++++++++++++++++ */
+
+.manrope-regular {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.eb-garamond {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.caveat {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* _____________________________________ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ______________adapt______________________ */
+/* @media screen and (max-width: 355px) {
+  .bgHeaderMainScreen {
+    background-position: -424px center;
+  }
+
+  .mainBtn {
+    padding: 6px 29px;
+  }
+} */
