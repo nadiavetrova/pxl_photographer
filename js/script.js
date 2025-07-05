@@ -1,4 +1,4 @@
-function changeBGBtn(parentHTML) {
+function changeBGBtnInit(parentHTML) {
   const parentHTMLBtns = document.querySelector(parentHTML);
   const button = parentHTMLBtns.querySelector(".headerBtnContacts");
 
@@ -10,5 +10,27 @@ function changeBGBtn(parentHTML) {
   }
 }
 
-changeBGBtn('.btnParent_01')
-// changeBGBtn('.btnParent_02')
+changeBGBtnInit('.btnParent_01')
+// changeBGBtnInit('.btnParent_02')
+
+
+function burgerInit() {
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.getElementById('burger');
+    const menu = document.querySelector('.headerMenuList');
+    const close = document.querySelector('.closeBurger');
+
+    burger.addEventListener('click', () => {
+      menu.classList.add('active');
+      console.log(111);
+
+    });
+
+    close.addEventListener('click', () => {
+      menu.classList.remove('active');
+    });
+  });
+}
+
+burgerInit();
+

@@ -91,12 +91,6 @@ button {
 
 /* _______________header______________________ */
 
-
-.col-5,
-.col-7 {
-  border: 2px solid #000;
-}
-
 .headerMenu_box {
   margin-top: 35px;
   font-size: 16px;
@@ -109,7 +103,7 @@ button {
   margin-top: 13px;
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 20px;
 }
 
 .headerBtn_box {
@@ -117,6 +111,77 @@ button {
   padding: 12px 35px;
   transition: background 0.5s ease;
 }
+
+.mainPhoto_box {
+  position: relative;
+}
+
+.logoImg {
+  width: 150px;
+  height: 90px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(3%, 10%);
+}
+
+.headerMenuList a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  /* или твой цвет */
+  padding: 5px 0;
+  display: inline-block;
+}
+
+.headerMenuList a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FFA216;
+  /* подчёркивание — твой акцентный цвет */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.headerMenuList a:hover::after {
+  transform: scaleX(1);
+}
+
+/* ______________burger_____________ */
+/* Бургер и его полоски */
+.burger {
+  width: 60px;
+  height: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 10;
+  margin-top: 15px;
+}
+
+.burger span {
+  display: block;
+  height: 3px;
+  background-color: #FFA216;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.closeBurger {
+  display: none;
+}
+
+.headerMenuList.active+.closeBurger {
+  display: block;
+}
+
+
 
 
 
@@ -135,12 +200,55 @@ button {
 
 
 /* ______________adapt______________________ */
-/* @media screen and (max-width: 355px) {
-  .bgHeaderMainScreen {
-    background-position: -424px center;
+
+@media (max-width: 767px) {
+  .closeBurger {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    transform: translate(-10%, 10%);
+    padding: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 
-  .mainBtn {
-    padding: 6px 29px;
+  .headerMenuList {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #ffa216be;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    display: none;
+    width: 100%;
+    text-align: center;
+    height: 100%;
   }
-} */
+
+  .headerMenuList.active {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .mainPhoto_box {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .headerBtn_box {
+    padding: 9px 27px;
+  }
+
+  .burger {
+    width: 43px;
+    margin-top: 12px;
+  }
+}
