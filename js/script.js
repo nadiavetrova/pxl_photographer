@@ -6,7 +6,7 @@ function changeBGBtnInit(parentHTML) {
 
   function changeBg(e) {
     const isBtn = e.target.tagName === 'A';
-    document.querySelector('.headerBtn_box').style.background = '#FFA216'
+    document.querySelector('.headerBtnContacts').style.background = '#FFA216'
   }
 }
 

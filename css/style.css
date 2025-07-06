@@ -61,22 +61,8 @@ button {
 
 /* +++++++++++++++fonts++++++++++++++++ */
 
-.manrope-regular {
-  font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.eb-garamond {
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.caveat {
-  font-family: "Caveat", cursive;
+.playfairDisplay-SemiBold {
+  font-family: "PlayfairDisplay-SemiBold", sans-serif;
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
@@ -89,14 +75,24 @@ button {
   font-style: normal;
 }
 
+.openSansRegular {
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 /* _______________header______________________ */
+.header-section {
+  margin-bottom: 100px;
+}
 
 .headerMenu_box {
-  margin-top: 35px;
   font-size: 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .headerMenuList {
@@ -107,8 +103,12 @@ button {
 }
 
 .headerBtn_box {
+  margin-top: 20px;
+}
+
+.headerBtnContacts {
   border: 3px solid #FFA216;
-  padding: 12px 35px;
+  padding: 5px 35px;
   transition: background 0.5s ease;
 }
 
@@ -150,6 +150,85 @@ button {
 
 .headerMenuList a:hover::after {
   transform: scaleX(1);
+}
+
+.headerFeaturesList_box {
+  margin-bottom: 20px;
+}
+
+.headerFeaturesItem {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.headerTitle {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.headerText {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.headerFeaturesText {
+  font-size: 16px;
+}
+
+.headerFeaturesIcon {
+  border: 2px solid #FFA216;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.headerTelegram_box {
+  border: 2px solid #000;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 5px 3px 20px;
+  margin-bottom: 20px;
+}
+
+.telegramLinkText {
+  color: #666666;
+  font-size: 16px;
+  margin: 0;
+}
+
+.headerTelegramLinkBtn {
+  font-size: 16px;
+  background-color: #FFA216;
+  border-radius: 25px;
+  padding: 10px 10px;
+}
+
+.headerPortfolio_box {
+  font-size: 16px;
+}
+
+.headerPortfolioLink {
+  color: #fff;
+  background-color: #000;
+  border-radius: 25px;
+  padding: 10px 40px;
+}
+
+
+.headerPortfolio_box,
+.headerPortfolioLink {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.portfolioLinkText {
+  margin: 0px;
 }
 
 /* ______________burger_____________ */
