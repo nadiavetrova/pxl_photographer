@@ -6,13 +6,14 @@ function changeBGBtnInit(parentHTML) {
 
   function changeBg(e) {
     const isBtn = e.target.tagName === 'A';
-    document.querySelector('.headerBtnContacts').style.background = '#FFA216'
+    if (isBtn) {
+      e.target.style.background = '#FFA216';
+    }
   }
 }
 
-changeBGBtnInit('.btnParent_01')
-// changeBGBtnInit('.btnParent_02')
-
+changeBGBtnInit('.btnParent_01');
+changeBGBtnInit('.btnParent_02');
 
 function burgerInit() {
   document.addEventListener('DOMContentLoaded', () => {
