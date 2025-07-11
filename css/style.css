@@ -330,8 +330,20 @@ button {
   padding: 50px 0;
 }
 
+.specializationInfo_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
 .specializationList {
   color: #fff;
+}
+
+.specializationText {
+  color: #666666;
 }
 
 .specializationItemBox {
@@ -349,6 +361,15 @@ button {
   border-radius: 25px;
 }
 
+.specializationImgs {
+  display: flex;
+  flex-wrap: no-wrap;
+  gap: 10px;
+}
+
+.specializationTitle {
+  font-size: 36px;
+}
 
 
 
@@ -420,6 +441,18 @@ button {
   .telegramLinkText {
     font-size: 14px;
   }
+
+  .specializationTitle {
+    font-size: 24px;
+  }
+
+  .specializationText {
+    font-size: 14px;
+  }
+
+  .specializationItemBox {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -462,60 +495,65 @@ button {
   }
 
   .closeBurger {
+    border-radius: 53px;
     display: block;
     position: absolute;
     top: 0;
     right: 0;
     font-size: 20px;
     transform: translate(-10%, 10%);
-    padding: 20px;
+    padding: 0px 10px;
     background: none;
     border: none;
     cursor: pointer;
     color: #000;
+    font-size: 26px;
+    background: #fff;
   }
+}
 
-  .headerMenuList {
-    margin-top: 0;
-    position: fixed;
-    top: 0;
-    background: #ffa216f7;
-    flex-direction: column;
-    padding: 53px 0 0 0;
-    border-radius: 0 20px 20px 0px;
-    display: flex;
-    width: 100%;
-    text-align: center;
-    height: 100%;
-    transform: translate(-100%, 0px);
-    transition: all 0.3s ease-in-out;
-    width: 50vw;
-    left: 0;
-  }
+.headerMenuList {
+  font-size: 26px;
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  background: #ffa216f7;
+  flex-direction: column;
+  padding: 53px 0 0 0;
+  border-radius: 0 20px 20px 0px;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  transform: translate(-100%, 0px);
+  transition: all 0.3s ease-in-out;
+  width: 50vw;
+  left: 0;
+}
 
-  .headerMenuList.active {
-    transform: translate(0, 0);
-  }
+.headerMenuList.active {
+  transform: translate(0, 0);
+}
 
-  .burger {
-    display: flex;
-  }
+.burger {
+  display: flex;
+}
 
-  .mainPhoto_box {
-    display: none;
-  }
+.mainPhoto_box {
+  display: none;
+}
 
-  .headerMenu_box {
-    justify-content: space-between;
-  }
+.headerMenu_box {
+  justify-content: space-between;
+}
 
-  .headerPortfolioLink {
-    padding: 10px 115px;
-  }
+.headerPortfolioLink {
+  padding: 10px 115px;
+}
 
-  .headerMenu_box {
-    margin-bottom: 60px;
-  }
+.headerMenu_box {
+  margin-bottom: 60px;
+}
 }
 
 @media (max-width: 431px) {
