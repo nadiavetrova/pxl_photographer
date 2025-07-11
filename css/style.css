@@ -83,6 +83,13 @@ button {
   font-style: normal;
 }
 
+.OoohBaby {
+  font-family: 'OoohBaby-Regular', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: italic;
+}
+
 /* _______________header______________________ */
 .headerInfoWrp {
   position: relative;
@@ -118,7 +125,7 @@ button {
 }
 
 .headerBtn_box {
-  margin-top: 20px;
+  margin: 40px 0;
 }
 
 .headerBtnContacts {
@@ -297,12 +304,13 @@ button {
 .aboutAchievementsList_box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .aboutTitle {
   font-size: 33px;
   margin: 50px 0 30px 0;
+  width: 80%;
 }
 
 .aboutText,
@@ -376,12 +384,62 @@ button {
   font-size: 36px;
 }
 
+/* ____________quoteSection_______________ */
 
+.quoteSection {
+  text-align: center;
+  padding: 150px 0;
+  position: relative;
+  overflow: hidden;
+}
 
+.quote {
+  width: 80%;
+  margin: 0 auto;
+}
 
+.quoteVector_01,
+.quoteVector_03,
+.quoteVector_02 {
+  position: absolute;
+}
 
+.quoteVector_03 {
+  transform: translate(100%, 70%);
+  top: 0;
+}
 
+.quoteVector_02 {
+  transform: translate(-50%, 0%);
+  bottom: 0;
+}
 
+.quoteVector_01 {
+  transform: translate(-50%, -10%);
+  bottom: 0;
+}
+
+.quoteText,
+.quoteTitle {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.quoteText {
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+
+.quoteName {
+  font-size: 16px;
+}
+
+.quoteImg {
+  border-radius: 50px;
+  padding: 7px;
+  border: 1px solid #E9E9E9;
+  margin-bottom: 20px;
+}
 
 
 
@@ -461,6 +519,12 @@ button {
 }
 
 @media (max-width: 767px) {
+
+  .quoteText,
+  .quoteTitle {
+    font-size: 28px;
+  }
+
   .containerAbout {
     padding: 10px 50px 0 50px;
   }
@@ -561,6 +625,15 @@ button {
 }
 
 @media (max-width: 431px) {
+  .quoteVector_03 {
+    transform: translate(50%, 70%);
+  }
+
+  .quoteText,
+  .quoteTitle {
+    font-size: 20px;
+  }
+
   .headerBtn_box {
     padding: 9px 27px;
   }
