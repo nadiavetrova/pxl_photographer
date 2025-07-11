@@ -443,6 +443,11 @@ button {
 }
 
 /* ____________projects___________ */
+.projectsSection {
+  background-color: #F9F9F9;
+  padding: 100px 0;
+  margin-bottom: 100px;
+}
 
 .projects {
   display: flex;
