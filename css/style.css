@@ -85,11 +85,16 @@ button {
 
 /* _______________header______________________ */
 .headerInfoWrp {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
   height: 100%;
+  background-image: url(../icon/headerLogo_02.png), url(../icon/headerLogo_01.png);
+  background-position: top right, top right;
+  background-repeat: no-repeat;
+  background-size: 340px auto, 250px auto;
 }
 
 .header-section {
@@ -510,50 +515,49 @@ button {
     font-size: 26px;
     background: #fff;
   }
-}
 
-.headerMenuList {
-  font-size: 26px;
-  margin-top: 0;
-  position: fixed;
-  top: 0;
-  background: #ffa216f7;
-  flex-direction: column;
-  padding: 53px 0 0 0;
-  border-radius: 0 20px 20px 0px;
-  display: flex;
-  width: 100%;
-  text-align: center;
-  height: 100%;
-  transform: translate(-100%, 0px);
-  transition: all 0.3s ease-in-out;
-  width: 50vw;
-  left: 0;
-}
+  .headerMenuList {
+    font-size: 26px;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    background: #ffa216f7;
+    flex-direction: column;
+    padding: 53px 0 0 0;
+    border-radius: 0 20px 20px 0px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    transform: translate(-100%, 0px);
+    transition: all 0.3s ease-in-out;
+    width: 50vw;
+    left: 0;
+  }
 
-.headerMenuList.active {
-  transform: translate(0, 0);
-}
+  .headerMenuList.active {
+    transform: translate(0, 0);
+  }
 
-.burger {
-  display: flex;
-}
+  .burger {
+    display: flex;
+  }
 
-.mainPhoto_box {
-  display: none;
-}
+  .mainPhoto_box {
+    display: none;
+  }
 
-.headerMenu_box {
-  justify-content: space-between;
-}
+  .headerMenu_box {
+    justify-content: space-between;
+  }
 
-.headerPortfolioLink {
-  padding: 10px 115px;
-}
+  .headerPortfolioLink {
+    padding: 10px 115px;
+  }
 
-.headerMenu_box {
-  margin-bottom: 60px;
-}
+  .headerMenu_box {
+    margin-bottom: 60px;
+  }
 }
 
 @media (max-width: 431px) {
