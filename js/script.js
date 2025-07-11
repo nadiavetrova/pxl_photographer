@@ -15,6 +15,8 @@ function changeBGBtnInit(parentHTML) {
 changeBGBtnInit('.btnParent_01');
 changeBGBtnInit('.btnParent_02');
 
+
+
 function burgerInit() {
   document.addEventListener('DOMContentLoaded', () => {
     const burger = document.getElementById('burger');
@@ -35,3 +37,17 @@ function burgerInit() {
 
 burgerInit();
 
+
+
+function specializationLineInit() {
+  const specializationItems = document.querySelectorAll('.specializationItem');
+  const percents = document.querySelectorAll('.percent');
+
+  specializationItems.forEach((item, index) => {
+    const percent = percents[index].textContent.trim();
+
+    item.style.width = percent;
+  });
+}
+
+specializationLineInit()

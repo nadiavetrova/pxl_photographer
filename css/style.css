@@ -33,6 +33,7 @@ button {
   cursor: pointer;
 }
 
+
 /* ++++++++++++++++++++++++++++++++++++++++ */
 
 .accent {
@@ -84,8 +85,10 @@ button {
 
 /* _______________header______________________ */
 .headerInfoWrp {
-  margin-top: auto;
-  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   height: 100%;
 }
 
@@ -230,6 +233,7 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 5px;
+  align-items: center;
 }
 
 .portfolioLinkText {
@@ -278,7 +282,12 @@ button {
 .containerAbout {
   background-color: #000;
   border-bottom-left-radius: 70px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: stretch;
+  align-items: center;
 }
+
 
 .aboutAchievementsList_box {
   display: flex;
@@ -288,7 +297,7 @@ button {
 
 .aboutTitle {
   font-size: 33px;
-  margin-top: 50px;
+  margin: 50px 0 30px 0;
 }
 
 .aboutText,
@@ -314,7 +323,67 @@ button {
   padding-left: 50px;
 }
 
+/* ____________________specialisition___________ */
+
+.specializationSection {
+  background-color: #F9F9F9;
+  padding: 50px 0;
+}
+
+.specializationList {
+  color: #fff;
+}
+
+.specializationItemBox {
+  background-color: #FFA216;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.specializationItem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 10px;
+  background-color: #000;
+  border-radius: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ______________adapt______________________ */
+@media (max-width: 1200px) {
+  .containerAbout {
+    grid-template-columns: auto;
+  }
+
+  .aboutAchievementsList_box {
+    justify-content: space-around;
+  }
+
+  .headerBtn_box {
+    margin-top: 50px;
+  }
+}
+
 @media (max-width: 990px) {
   .headerBtnContacts {
     display: none;
@@ -354,6 +423,10 @@ button {
 }
 
 @media (max-width: 767px) {
+  .containerAbout {
+    padding: 10px 50px 0 50px;
+  }
+
   .aboutInfo_box {
     padding-left: 0px;
   }
