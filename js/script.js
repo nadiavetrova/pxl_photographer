@@ -14,6 +14,7 @@ function changeBGBtnInit(parentHTML) {
 
 changeBGBtnInit('.btnParent_01');
 changeBGBtnInit('.btnParent_02');
+changeBGBtnInit('.btnParent_03');
 
 
 
