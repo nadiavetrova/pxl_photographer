@@ -91,6 +91,13 @@ button {
 }
 
 /* _______________header______________________ */
+.header-section {
+  background-image: url(../icon/headerLogo_02.png), url(../icon/headerLogo_01.png);
+  background-position: top right, top right;
+  background-repeat: no-repeat;
+  background-size: 550px auto, 350px auto;
+}
+
 .headerInfoWrp {
   position: relative;
   display: flex;
@@ -98,10 +105,6 @@ button {
   flex-wrap: nowrap;
   justify-content: space-between;
   height: 100%;
-  background-image: url(../icon/headerLogo_02.png), url(../icon/headerLogo_01.png);
-  background-position: top right, top right;
-  background-repeat: no-repeat;
-  background-size: 340px auto, 250px auto;
 }
 
 .header-section {
