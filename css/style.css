@@ -191,6 +191,10 @@ button {
   font-size: 16px;
   color: #666666;
   margin-bottom: 20px;
+  max-height: calc(1em * 3.4);
+  /* 2 строки, с запасом */
+  overflow-y: auto;
+  line-height: 1.2em;
 }
 
 .headerFeaturesText {
@@ -320,6 +324,10 @@ button {
 
 .aboutText {
   font-size: 14px;
+  max-height: calc(1em * 3.4);
+  /* 2 строки, с запасом */
+  overflow-y: auto;
+  line-height: 1.2em;
 }
 
 .aboutAchievementsItemTitle {
@@ -514,10 +522,6 @@ button {
 .footerBtn {
   border: 2px solid #fff;
   margin-bottom: 50px;
-}
-
-.headerText {
-  color: #fff;
 }
 
 .footerTitle {
