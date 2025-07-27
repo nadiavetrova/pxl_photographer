@@ -7,7 +7,7 @@ function changeBGBtnInit(parentHTML) {
   function changeBg(e) {
     const isBtn = e.target.tagName === 'A';
     if (isBtn) {
-      e.target.style.background = '#FFA216';
+      e.target.style.background = '#607D8B';
     }
   }
 }

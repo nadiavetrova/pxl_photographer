@@ -37,7 +37,7 @@ button {
 /* ++++++++++++++++++++++++++++++++++++++++ */
 
 .accent {
-  color: #FFA216;
+  color: #607d8b;
 }
 
 .accentBg {
@@ -116,6 +116,7 @@ button {
   font-size: 16px;
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
   justify-content: space-between;
   margin-bottom: 20px;
 }
@@ -131,8 +132,12 @@ button {
   margin: 40px 0;
 }
 
+.headerIcon_box {
+  width: 32px;
+}
+
 .headerBtnContacts {
-  border: 3px solid #FFA216;
+  border: 3px solid #607d8b;
   padding: 5px 35px;
   transition: background 0.5s ease;
 }
@@ -142,12 +147,10 @@ button {
 }
 
 .logoImg {
-  width: 150px;
-  height: 90px;
   position: absolute;
   left: 0;
   top: 0;
-  transform: translate(3%, -20%);
+  transform: translate(-139%, 13%);
 }
 
 .headerMenuList a {
@@ -164,7 +167,7 @@ button {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: #FFA216;
+  background: #607D8B;
   /* подчёркивание — твой акцентный цвет */
   transform: scaleX(0);
   transform-origin: left;
@@ -205,7 +208,7 @@ button {
 }
 
 .headerFeaturesIcon {
-  border: 2px solid #FFA216;
+  border: 2px solid #607d8b;
   padding: 5px;
   border-radius: 20px;
 }
@@ -229,7 +232,7 @@ button {
 
 .headerTelegramLinkBtn {
   font-size: 16px;
-  background-color: #FFA216;
+  background-color: #607d8b;
   border-radius: 25px;
   padding: 10px 10px;
 }
@@ -249,7 +252,7 @@ button {
 .headerPortfolio_box,
 .headerPortfolioLink {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   justify-content: space-between;
   gap: 5px;
   align-items: center;
@@ -257,10 +260,6 @@ button {
 
 .portfolioLinkText {
   margin: 0px;
-}
-
-.itemHome {
-  color: #FFA216;
 }
 
 /* ______________burger_____________ */
@@ -279,7 +278,7 @@ button {
 .burger span {
   display: block;
   height: 3px;
-  background-color: #FFA216;
+  background-color: #607d8b;
   border-radius: 2px;
   transition: 0.3s;
 }
@@ -299,7 +298,7 @@ button {
 }
 
 .containerAbout {
-  background-color: #000;
+  background-color: #1a1811;
   border-bottom-left-radius: 70px;
   display: grid;
   grid-template-columns: auto auto;
@@ -335,7 +334,6 @@ button {
 
 .aboutAchievementsItemTitle {
   font-size: 26px;
-  color: #FFA216;
   margin: 0;
 }
 
@@ -347,11 +345,19 @@ button {
   padding-left: 50px;
 }
 
+.aboutPhoto_box {
+  text-align: end;
+}
+
 /* ____________________specialisition___________ */
 
 .specializationSection {
   background-color: #F9F9F9;
   padding: 50px 0;
+}
+
+.specializationImg {
+  border-top-left-radius: 50px;
 }
 
 .specializationInfo_box {
@@ -371,7 +377,7 @@ button {
 }
 
 .specializationItemBox {
-  background-color: #FFA216;
+  background-color: #607d8b;
   border-radius: 25px;
   margin-bottom: 20px;
 }
@@ -400,7 +406,7 @@ button {
 .quoteSection {
   margin-bottom: 100px;
   text-align: center;
-  padding: 150px 0;
+  padding: 100px 0;
   position: relative;
   overflow: hidden;
 }
@@ -447,17 +453,18 @@ button {
 }
 
 .quoteImg {
-  border-radius: 50px;
+  border-radius: 100px;
   padding: 7px;
   border: 1px solid #E9E9E9;
   margin-bottom: 20px;
+  width: 200px;
+  height: auto;
 }
 
 /* ____________projects___________ */
 .projectsSection {
   background-color: #F9F9F9;
   padding: 100px 0;
-  margin-bottom: 100px;
 }
 
 .projects {
@@ -506,20 +513,78 @@ button {
   filter: grayscale(0%);
 }
 
+/* __________myPrincipleSection______ */
 
+.myPrincipleSection {
+  background-color: #F9F9F9;
+  padding: 50px 0 100px 0;
+}
 
+.principImg {
+  border-radius: 25px;
+}
 
-/* ___________headerSection___________ */
+.myPrincipTitle {
+  font-size: 48px;
+}
+
+.myPrincipText {
+  font-size: 16px;
+  color: #666666;
+  margin-top: auto;
+}
+
+.myPrincipTitle>span {
+  color: #607d8b;
+}
+
+.myPrincipInfo_box {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 60px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+/* ___________registrationForm___________ */
+
+.registrationFormSection {
+  padding: 100px 0;
+}
+
+.registrationTitle {
+  font-size: 48px;
+}
+
+.btnForm,
+.registrationText {
+  font-size: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.inputBox {
+  font-size: 30px;
+}
+
+.input {
+  border: 1px solid #000;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 50px;
+}
+
+/* ___________footerSection___________ */
 .footerSection {
+  text-align: center;
   background-color: #000;
   color: #FFFFFF;
   padding: 80px 0 20px 0;
-}
-
-.footer_box {
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .footerBtn {
@@ -540,7 +605,7 @@ button {
 }
 
 .socialLink {
-  border: 2px solid #FFA216;
+  border: 2px solid #607d8b;
   border-radius: 25px;
   padding: 5px 10px;
 }
@@ -561,6 +626,10 @@ button {
 
 /* ______________adapt______________________ */
 @media (max-width: 1200px) {
+  .myPrincipTitle {
+    font-size: 33px;
+  }
+
   .projectList {
     padding: 0;
   }
@@ -584,6 +653,11 @@ button {
 }
 
 @media (max-width: 990px) {
+
+  .myPrincipTitle {
+    font-size: 30px;
+  }
+
   .headerBtnContacts {
     display: none;
   }
@@ -618,6 +692,7 @@ button {
 
   .telegramLinkText {
     font-size: 14px;
+    margin-left: 20px;
   }
 
   .specializationTitle {
@@ -634,23 +709,26 @@ button {
 }
 
 @media (max-width: 767px) {
+  .myPrincipTitle {
+    font-size: 28px;
+  }
+
+  .footerTitle {
+    font-size: 30px;
+  }
 
   .quoteText,
   .quoteTitle {
     font-size: 28px;
   }
 
-  .containerAbout {
-    padding: 10px 50px 0 50px;
-  }
-
   .aboutInfo_box {
-    padding-left: 0px;
+    padding: 10px 50px 0 50px;
   }
 
   .headerText {
     font-size: 16px;
-    margin-bottom: 25px;
+    margin: 14px 0 14px 20px;
   }
 
   .headerTitle {
@@ -667,6 +745,7 @@ button {
     justify-content: center;
     flex-direction: row;
     gap: 15px;
+    flex-wrap: wrap;
   }
 
   .itemHome {
@@ -700,7 +779,7 @@ button {
     margin-top: 0;
     position: fixed;
     top: 0;
-    background: #ffa216f7;
+    background: #607D8B;
     flex-direction: column;
     padding: 53px 0 0 0;
     border-radius: 0 20px 20px 0px;
@@ -739,7 +818,42 @@ button {
   }
 }
 
+@media (max-width: 600px) {
+  .myPrincipTitle {
+    font-size: 25px;
+  }
+
+  .myPrincipInfo_box {
+    gap: 5px;
+  }
+
+  .myPrincipText {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .headerTelegram_box {
+    padding: 3px 3px 3px 3px;
+  }
+}
+
 @media (max-width: 431px) {
+  .myPrincipTitle {
+    font-size: 23px;
+  }
+
+  .myPrincipText {
+    font-size: 10px;
+  }
+
+  .headerTelegram_box {
+    padding: 3px 3px 3px 3px;
+  }
+
+  .footerTitle {
+    font-size: 26px;
+  }
 
   .quoteVector_03 {
     transform: translate(50%, 70%);
