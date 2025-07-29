@@ -294,7 +294,9 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-3">
-
+          <div class="registrationImg_box">
+            <img src="img/registrationImg.jpg" alt="photo" class="registrationImg img-fluid">
+          </div>
         </div>
         <div class="col-12 col-md-9">
           <form class="form" action="/action_page.php" method="POST">
@@ -305,25 +307,33 @@
               content.</p>
 
             <div class="inputBox openSansRegular">
-              <img class="iconForm" src="icon-user.png" alt="User Icon">
-              <input class="input" type="text" name="username" placeholder="Your name..." required>
+              <input class="input inputName" type="text" autocomplete="username" name="username"
+                placeholder="Your name..." required>
+              <div class="errorMessage_box">
+                <p class="errorMessage errorMessageDN errorMessageName">This field "Name" is required</p>
+              </div>
             </div>
 
             <div class="inputBox openSansRegular">
-              <img class="iconForm" src="icon-email.png" alt="Email Icon">
-              <input class="input" type="email" name="email" placeholder="Your email..." required>
+              <input class="input inputEmail" type="email" name="email" placeholder="Your email..."
+                autocomplete="username" required>
+              <div class="errorMessage_box">
+                <p class="errorMessage errorMessageDN errorMessageEmail">This field "Email" is required</p>
+              </div>
             </div>
 
             <div class="inputBox openSansRegular">
-              <img class="iconForm" src="icon-password.png" alt="Password Icon">
-              <input class="input" type="password" name="password" placeholder="Choose a password..." required>
+              <input class="input inputPassword" type="password" name="password" placeholder="Choose a password..."
+                required autocomplete="current-password">
+              <div class="errorMessage_box">
+                <p class="errorMessage errorMessagePassword errorMessageDN">This field "Password" is required</p>
+              </div>
             </div>
 
-            <div class="headerBtn_box uppercase">
-              <button type="submit" class="btnForm headerBtnContacts">Sign Up</button>
+            <div class="headerBtn_box uppercase formBtn_box">
+              <button type="submit" class="btnForm headerBtnContacts uppercase">Register</button>
             </div>
           </form>
-
         </div>
       </div>
     </div>
