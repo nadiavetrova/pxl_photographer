@@ -49,6 +49,34 @@ function specializationLineInit() {
 }
 
 specializationLineInit()
+// _________________________________________
+function saveTheme() {
+  function applyTheme(theme) {
+    document.body.className = theme;
+    localStorage.setItem('preferredmode', theme);
+  }
+
+  let saved = localStorage.getItem('preferredmode');
+  if (!saved) {
+    saved = 'light';
+  }
+  applyTheme(saved);
+
+  document.querySelector('input[value="' + saved + '"]').checked = true;
+
+  let lightBtn = document.querySelector('input[value="light"]');
+  let darkBtn = document.querySelector('input[value="dark"]');
+
+  lightBtn.addEventListener('change', function () {
+    applyTheme('light');
+  });
+
+  darkBtn.addEventListener('change', function () {
+    applyTheme('dark');
+  });
+}
+
+saveTheme()
 
 // ______________________________________________
 function formRegistrationInit() {

@@ -9,7 +9,20 @@ html,
 body {
   height: 5000px;
   font-family: sans-serif;
+}
+
+body.dark {
+  background-color: #526041;
+  color: #eee;
+}
+
+body.light {
+  background-color: rgb(239, 239, 235);
   color: black;
+}
+
+.changeColor {
+  margin: 50px 0;
 }
 
 html {
@@ -146,7 +159,7 @@ button {
   position: relative;
 }
 
-.logoImg {
+.logo_box {
   position: absolute;
   left: 0;
   top: 0;
