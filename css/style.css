@@ -12,8 +12,8 @@ body {
 }
 
 body.dark {
-  background-color: #526041;
-  color: #eee;
+  background-color: #3d5059;
+  color: #9ac4d8;
 }
 
 body.light {
@@ -163,7 +163,7 @@ button {
   position: absolute;
   left: 0;
   top: 0;
-  transform: translate(-139%, 13%);
+  transform: translate(-139%, -15%);
 }
 
 .headerMenuList a {
